@@ -1,0 +1,316 @@
+/**************************************************************************************/
+/* ESTILO GENERALES PARA EL CUERPO DE LAPAGINA*/
+/*************************************************************************************/
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: rgb(27, 27, 27);
+  color: #fcfcfc;
+  flex-direction: column;
+  overflow-x: hidden; /* Evita el desplazamiento horizontal */
+  scroll-behavior: smooth; /* Desplazamiento suave */
+}
+
+/*************************************************************************************/
+/*MENU DE NAVEGACIÓN*/
+/*************************************************************************************/
+/*Le doy forma al logo y lo posiciono donde quiero*/
+.logo {
+  margin-right: 50px;
+  margin-left: -50px;
+  margin-top: -40px;
+  text-decoration: none;
+  padding: 10px;
+  display: block;
+  list-style: none;
+  display: flex;
+}
+
+/*EN ESTOS APARTADOS LE DOY ESTILO AL MENU DE NAVEGACIÓN*/
+/*POSICION Y FORMA DE LA BARRA DE NAVEGACION*/
+nav {
+  display: flex;
+  align-items: flex-start;
+  position: fixed;
+  width: 100%;
+  border-radius: 1em;
+  font-size: 1rem;
+  text-align: center;
+  position: relative;
+  border: 1px solid #000000; /* Borde negro */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Sombra */
+  background-color: rgba(255, 255, 255, 0); /* Interior transparente */
+  height: 80px; /* Altura inicial */
+}
+nav a {
+  color: #fcfcfc;
+}
+
+/*QUITAR LOS PUNTOS A LA LISTA DESORDENADA*/
+menu ul {
+  list-style: none;
+}
+/*PONER EN SU SITIO LOS BOTONES DE NAVEGACION*/
+.menu {
+  display: flex;
+  justify-content: center;
+  background-color: transparent;
+}
+/*SEPARACIÓN ENTRE BOTONES*/
+.menu a span {
+  display: inline-block;
+  padding: 10px;
+}
+.menu li a {
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+/*MOVIMIENTO DE LOS BOTONES*/
+.menu a span {
+  transition: transform 0.2s ease-out;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Sombra */
+  background-color: rgba(255, 255, 255, 0); /* Interior transparente */
+}
+/*QUE ACTUE CUANDO LE PASAS EL CURSOR POR ENCIMA*/
+.menu a:hover span {
+  transform: translateY(100%);
+}
+
+/*************************************************************************************/
+/*ESTILO DEL PIE DE PAGINA*/
+/*************************************************************************************/
+.footer {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-size: 1rem;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  position: relative;
+  width: 100%;
+  bottom: 0;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.5); /* Sombra para el footer */
+}
+/*************************************************************************************/
+/*ESTILO DE LA PAGINA 2 DE LOS GATOS*/
+/*************************************************************************************/
+/*CREO EL RECUADRO CON LA FORMA QUE DESEO*/
+.gatitos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 20px;
+  opacity: 0;
+  justify-content: center;
+  flex-wrap: wrap;
+  /*CREO UNA ANIMACIÓN PARA CUANDO CARGA LA PAGINA*/
+  transform: translateY(
+    10px
+  ); /*LE DIGO CUANTO QUIERO QUE SE MUEVA LA TRANSICIÓN*/
+  animation: fadeIn 2s forwards ease; /*Aplica la animación fadeIn que dura 2 segundos, 
+  con un efecto de suavizado (ease) y se ejecuta hacia adelante (forwards)*/
+}
+/*Define que al final de la animación, la opacidad será 1 (totalmente visible)
+ y la transformación será translateY(0), es decir, los elementos volverán a su posición original.*/
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/*LE DOY ESTILO AL RECUADRO AÑADIENDOLE SOMBRA COLOR DE FONDO Y REDONDEANDO LOS ITEMS DE DENTRO*/
+.gatito1 {
+  background-color: #eeeaea;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: #ffffff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+/*CUANDO PASEMOS EL CURSOR HACE EL EFECTO DE TRANSICIÓN*/
+.gatito1:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+/*SELECCIONO EL TAMAÑO DE LA IMAGEN QUE MOSTRARE*/
+.gatito1 img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+/*LE DOY STILO AL TEXTO*/
+.gatito1 h2 {
+  margin: 10px 0 5px;
+  color: #000000;
+}
+.gatito1 p {
+  margin: 0;
+  color: #000000;
+}
+
+/* PULSACION EN EL GATO Y QUE HAGA EL EFECTO */
+
+.gatito1:target {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(2);
+  z-index: 10;
+  width: 200px;
+  height: auto;
+  background-color: white;
+  border: 2px solid black;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  box-sizing: border-box;
+}
+/* Desenfocar el fondo */
+.gatito1:target ~ .gatito1 {
+  filter: blur(5px);
+}
+/* Estilo para el recuadro que se sobrepone */
+.overlay {
+  display: none;
+}
+
+.gatito1:target ~ .overlay {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 5;
+}
+/* Estilo para el enlace de cierre */
+.gatito1 .close {
+  cursor: pointer;
+}
+
+/*************************************************************************************/
+/*PARRAFOS EN LA PAGINA DEL INDEX*/
+/*************************************************************************************/
+.contenido {
+  max-width: 800px;
+  margin: auto;
+  padding: auto;
+}
+
+.valores h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.valores p {
+  text-align: justify;
+}
+/*************************************************************/
+/* FORMULARIO DE ADOPCION*/
+/*************************************************************/
+
+.formulario {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+label {
+  display: block;
+  margin-top: 10px;
+  color: #1f1f1f;
+  text-shadow: #000000;
+  text-wrap: wrap;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+input[type="submit"] {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+/*************************************************************/
+/* TABLAS DE LA PAGINA 4*/
+/*************************************************************/
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 1rem;
+  text-align: left;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+th,
+td {
+  padding: 12px 15px;
+  border: 1px solid #ffffff;
+}
+
+th {
+  background-color: #1f1f1f;
+  color: #ffffff;
+}
+
+tr:nth-child(even) {
+  background-color: #1f1f1f;
+}
+
+tr:hover {
+  background-color: #6f6f6f;
+}
+
+caption {
+  caption-side: top;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.cuidado {
+  text-align: left;
+}
+.centrartext {
+  text-align: center;
+}
+
+/*************************************************************/
+/* BUSCADOR DE LA PAGINA 4*/
+/*************************************************************/
+#buscador {
+  margin: 20px 0;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+#buscador .buscador {
+  padding: 3px;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  font-size: small;
+}
+
+form input[type="submit"].botoncito {
+  padding: 5px 10px; /* Tamaño pequeño */
+  border: none;
+  border-radius: 5px;
+  background-color: #4caf50;
+  color: white;
+  cursor: pointer;
+  font-size: 0.8rem; /* Fuente más pequeña */
+}
+
+form input[type="submit"].botoncito:hover {
+  background-color: #45a049;
+}
