@@ -1,5 +1,5 @@
-# DISE-O-GATITOS
-Asignatura de diseño de interfaces web
+# AMIGOS PELUDOS
+ONG DE AYUDA Y ADOPCION DE ANIMALES ABANDONADOS
 # 🎨 Guía de Estilos — ONG de Mascotas
 
 Paleta cromática integrada a partir de un **logo amarillo y marrón**, diseñada para transmitir cercanía, confianza y calidez, manteniendo legibilidad y coherencia visual.
