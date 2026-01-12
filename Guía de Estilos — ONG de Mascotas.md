@@ -1,71 +1,51 @@
-🎨 Guía de Estilos — ONG de Mascotas
-Paleta integrada basada en logo amarillo y marrón
-1️⃣ Colores principales (logo)
-🟡 Amarillo principal
-<div style="background:#F2C94C; padding:16px; border-radius:6px; width:100%;"></div>
-HEX: #F2C94C
-Uso: acentos, iconos, hover, destacados
-No usar: como fondo de texto largo
-🟤 Marrón principal
-<div style="background:#6B4F2D; padding:16px; border-radius:6px; width:100%;"></div>
-HEX: #6B4F2D
-Uso: encabezados, botones principales, footer
-Sensación: estabilidad, cercanía, naturaleza
-2️⃣ Colores de integración (fondos y texto)
-🤍 Blanco roto (fondo principal)
-<div style="background:#FAFAF7; padding:16px; border-radius:6px; border:1px solid #ddd;"></div>
-HEX: #FAFAF7
-Reduce la dureza del blanco puro
-Ideal para secciones largas
-🟫 Beige claro (fondo alternativo)
-<div style="background:#EFE6D8; padding:16px; border-radius:6px;"></div>
-HEX: #EFE6D8
-Integra visualmente amarillo y marrón
-Alternar con blanco roto entre secciones
-🔤 Gris oscuro (texto principal)
-<div style="background:#333333; padding:16px; border-radius:6px;"></div>
-HEX: #333333
-Mejor legibilidad que negro puro
-Texto principal y títulos secundarios
-🔤 Gris medio (texto secundario)
-<div style="background:#666666; padding:16px; border-radius:6px;"></div>
-HEX: #666666
-Textos de apoyo, fechas, etiquetas
-3️⃣ Colores funcionales
-🟤 Botón principal (CTA)
-<div style="background:#5A3E22; padding:16px; border-radius:6px;"></div>
-HEX: #5A3E22
-Texto encima: #FAFAF7
-🟡 Hover de botones
-<div style="background:#E0B93C; padding:16px; border-radius:6px;"></div>
-HEX: #E0B93C
-Mantiene coherencia con el amarillo del logo
-🔗 Enlaces
-<div style="background:#7A5A38; padding:16px; border-radius:6px;"></div>
-HEX: #7A5A38
-Diferenciables sin romper la estética
-❌ Error
-<div style="background:#C94A4A; padding:16px; border-radius:6px;"></div>
-HEX: #C94A4A
-Mensajes de error o validación
-✅ Éxito
-<div style="background:#6B8E23; padding:16px; border-radius:6px;"></div>
-HEX: #6B8E23
-Confirmaciones (formularios, envíos)
-4️⃣ Ejemplo de combinación real
-<div style="background:#EFE6D8; padding:20px; border-radius:8px;"> <h3 style="color:#6B4F2D;">Adopta, no compres</h3> <p style="color:#333333;"> Ayúdanos a dar un hogar a mascotas que lo necesitan. </p> <a style=" background:#5A3E22; color:#FAFAF7; padding:10px 16px; border-radius:6px; text-decoration:none; display:inline-block; "> Ver mascotas </a> </div>
-✔ Colores integrados
-✔ Contraste correcto
-✔ Sensación cálida y amable
-5️⃣ Resumen rápido (para el alumnado)
-Amarillo: acento y hover
-Marrón: estructura y acciones
-Fondos: claros (blanco roto / beige)
-Texto: gris oscuro
-Nunca: amarillo para texto largo
-👉 Siguiente paso (elige):
-📄 Convertir esto mismo en PDF
-🎨 Crear variables CSS (:root)
-🧩 Adaptarlo a nivel ESO / FP
-📐 Añadir ejemplos flex y float con estos colores
-Dime qué necesitas y lo preparo.
+Guía de Estilo – Justificación y Criterios de Diseño
+Página web de una ONG de mascotas
+1. Enfoque general del diseño
+El diseño de la página web se ha planteado para transmitir cercanía, confianza y compromiso social. Al tratarse de una ONG de protección animal, es importante que la web resulte acogedora y clara, evitando una estética excesivamente comercial o fría.
+Todas las decisiones visuales (colores, tipografía e imágenes) se han tomado con el objetivo de facilitar la lectura, generar empatía y reforzar los valores de cuidado, respeto y responsabilidad hacia los animales.
+2. Elección e intención de los colores
+2.1 Colores principales
+La paleta de colores parte del amarillo y el marrón, que son los colores del logotipo de la ONG. Aunque el logotipo se añadirá más adelante, el diseño ya está preparado para integrarlo de forma natural.
+Amarillo
+Se ha elegido como color de acento porque transmite sensaciones positivas como cercanía, optimismo y energía. En el contexto de una ONG de mascotas, el amarillo ayuda a generar una impresión amable y accesible, invitando a la participación (adopción, colaboración, donaciones).
+Su uso se limita a detalles concretos como resaltados, efectos hover o elementos secundarios, evitando utilizarlo en grandes bloques de texto para no afectar a la legibilidad.
+Marrón
+El marrón se asocia con la tierra, lo natural y lo estable. Se utiliza como color estructural de la web: encabezados, botones principales y pie de página. Refuerza la idea de protección, cuidado y compromiso a largo plazo, valores fundamentales en una organización dedicada al bienestar animal.
+2.2 Colores de apoyo e integración
+Para equilibrar el amarillo y el marrón, se han incorporado colores neutros:
+Blanco roto y beige claro
+Se utilizan como fondos principales. Estos tonos suavizan el conjunto visual, aportan limpieza y permiten que el contenido destaque sin resultar agresivo. Además, ayudan a integrar los colores del logotipo sin que la página se vea sobrecargada.
+Grises oscuros para el texto
+En lugar de negro puro, se usan grises oscuros para mejorar la legibilidad y reducir el contraste excesivo. Esto hace que la lectura sea más cómoda, especialmente en pantallas grandes o durante un uso prolongado.
+2.3 Intención comunicativa del color
+El conjunto de la paleta busca:
+Transmitir calidez y cercanía.
+Generar confianza en la organización.
+Evitar colores estridentes o fríos.
+Facilitar la lectura y la navegación en todo tipo de dispositivos.
+3. Tipografía de la página
+3.1 Tipografía principal
+Se utiliza una tipografía sans-serif estándar y accesible:
+Arial / Helvetica / sans-serif
+Esta elección se debe a que:
+Está disponible en todos los sistemas (web-safe).
+Ofrece una lectura clara en móvil, tablet y escritorio.
+Tiene un aspecto neutral y amable, adecuado para una ONG.
+No distrae del contenido ni de las imágenes.
+3.2 Uso tipográfico
+Los títulos utilizan un mayor peso para marcar jerarquía.
+El texto de párrafo mantiene un tamaño mínimo de 16 px para garantizar la legibilidad.
+Se evita el uso de demasiadas tipografías para mantener coherencia visual.
+4. Estilo de las imágenes
+Las imágenes utilizadas en la web siguen un criterio claro:
+Fotografías realistas de animales reales.
+Imágenes que muestren a las mascotas en situaciones naturales y cotidianas.
+Preferencia por fotos que transmitan cercanía, ternura y autenticidad.
+Evitar ilustraciones infantiles, caricaturas o imágenes excesivamente retocadas.
+Este enfoque permite generar empatía con el visitante y reforzar el mensaje de que se trata de animales reales que necesitan ayuda y un hogar.
+5. Lenguaje visual y coherencia
+El diseño combina:
+Colores cálidos y naturales.
+Tipografía clara y sencilla.
+Imágenes reales y emocionales.
+Todo ello contribuye a una experiencia visual coherente y alineada con los valores de una ONG de mascotas, facilitando que el usuario confíe en la organización y se implique en sus acciones.
