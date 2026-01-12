@@ -1,51 +1,120 @@
-Guía de Estilo – Justificación y Criterios de Diseño
-Página web de una ONG de mascotas
-1. Enfoque general del diseño
-El diseño de la página web se ha planteado para transmitir cercanía, confianza y compromiso social. Al tratarse de una ONG de protección animal, es importante que la web resulte acogedora y clara, evitando una estética excesivamente comercial o fría.
-Todas las decisiones visuales (colores, tipografía e imágenes) se han tomado con el objetivo de facilitar la lectura, generar empatía y reforzar los valores de cuidado, respeto y responsabilidad hacia los animales.
-2. Elección e intención de los colores
-2.1 Colores principales
-La paleta de colores parte del amarillo y el marrón, que son los colores del logotipo de la ONG. Aunque el logotipo se añadirá más adelante, el diseño ya está preparado para integrarlo de forma natural.
-Amarillo
-Se ha elegido como color de acento porque transmite sensaciones positivas como cercanía, optimismo y energía. En el contexto de una ONG de mascotas, el amarillo ayuda a generar una impresión amable y accesible, invitando a la participación (adopción, colaboración, donaciones).
-Su uso se limita a detalles concretos como resaltados, efectos hover o elementos secundarios, evitando utilizarlo en grandes bloques de texto para no afectar a la legibilidad.
-Marrón
-El marrón se asocia con la tierra, lo natural y lo estable. Se utiliza como color estructural de la web: encabezados, botones principales y pie de página. Refuerza la idea de protección, cuidado y compromiso a largo plazo, valores fundamentales en una organización dedicada al bienestar animal.
-2.2 Colores de apoyo e integración
-Para equilibrar el amarillo y el marrón, se han incorporado colores neutros:
-Blanco roto y beige claro
-Se utilizan como fondos principales. Estos tonos suavizan el conjunto visual, aportan limpieza y permiten que el contenido destaque sin resultar agresivo. Además, ayudan a integrar los colores del logotipo sin que la página se vea sobrecargada.
-Grises oscuros para el texto
-En lugar de negro puro, se usan grises oscuros para mejorar la legibilidad y reducir el contraste excesivo. Esto hace que la lectura sea más cómoda, especialmente en pantallas grandes o durante un uso prolongado.
-2.3 Intención comunicativa del color
-El conjunto de la paleta busca:
-Transmitir calidez y cercanía.
-Generar confianza en la organización.
-Evitar colores estridentes o fríos.
-Facilitar la lectura y la navegación en todo tipo de dispositivos.
-3. Tipografía de la página
-3.1 Tipografía principal
-Se utiliza una tipografía sans-serif estándar y accesible:
-Arial / Helvetica / sans-serif
-Esta elección se debe a que:
-Está disponible en todos los sistemas (web-safe).
-Ofrece una lectura clara en móvil, tablet y escritorio.
-Tiene un aspecto neutral y amable, adecuado para una ONG.
-No distrae del contenido ni de las imágenes.
-3.2 Uso tipográfico
-Los títulos utilizan un mayor peso para marcar jerarquía.
-El texto de párrafo mantiene un tamaño mínimo de 16 px para garantizar la legibilidad.
-Se evita el uso de demasiadas tipografías para mantener coherencia visual.
-4. Estilo de las imágenes
-Las imágenes utilizadas en la web siguen un criterio claro:
-Fotografías realistas de animales reales.
-Imágenes que muestren a las mascotas en situaciones naturales y cotidianas.
-Preferencia por fotos que transmitan cercanía, ternura y autenticidad.
-Evitar ilustraciones infantiles, caricaturas o imágenes excesivamente retocadas.
-Este enfoque permite generar empatía con el visitante y reforzar el mensaje de que se trata de animales reales que necesitan ayuda y un hogar.
-5. Lenguaje visual y coherencia
-El diseño combina:
-Colores cálidos y naturales.
-Tipografía clara y sencilla.
-Imágenes reales y emocionales.
-Todo ello contribuye a una experiencia visual coherente y alineada con los valores de una ONG de mascotas, facilitando que el usuario confíe en la organización y se implique en sus acciones.
+# Guía de Estilo — Página Web ONG de Mascotas
+
+## 1. Enfoque general del diseño
+
+El diseño de la página web se ha planteado para transmitir cercanía, confianza y compromiso con el bienestar animal. Al tratarse de una ONG de mascotas, era importante crear una identidad visual cálida y accesible, que invite a las personas a informarse, colaborar y adoptar.
+
+Todas las decisiones de color, tipografía e imagen se han tomado con el objetivo de facilitar la lectura, mejorar la experiencia del usuario y reforzar los valores de la organización.
+
+---
+
+## 2. Elección e intención de los colores
+
+La paleta de colores se basa en los colores principales del logo de la ONG, que son el amarillo y el marrón. A partir de ellos se han creado tonos complementarios y neutros para lograr un conjunto equilibrado y coherente.
+
+### Amarillo
+
+El amarillo se ha elegido como color de apoyo porque transmite sensaciones positivas como cercanía, optimismo y energía. En el contexto de una ONG de mascotas, este color ayuda a generar una primera impresión amable y acogedora.
+
+Se utiliza principalmente en elementos destacados como:
+- Estados hover de botones
+- Iconos o pequeños detalles visuales
+- Elementos que necesitan llamar la atención del usuario
+
+Se evita su uso como fondo de texto largo para no dificultar la lectura.
+
+### Marrón
+
+El marrón es el color estructural del diseño. Está asociado con la naturaleza, la estabilidad y la confianza, valores muy relacionados con el cuidado animal y la responsabilidad.
+
+Se emplea en:
+- Botones principales de acción
+- Títulos y encabezados
+- Footer y elementos estructurales
+
+Este color ayuda a dar solidez al diseño y a equilibrar visualmente el amarillo.
+
+### Colores neutros
+
+Para no sobrecargar la interfaz, se han incorporado colores neutros claros:
+- Blanco roto para los fondos principales
+- Beige claro para separar secciones
+- Gris oscuro y gris medio para los textos
+
+Estos tonos permiten que los colores del logo destaquen sin competir con el contenido y garantizan una buena legibilidad en todos los dispositivos.
+
+---
+
+## 3. Paleta de colores utilizada
+
+- Amarillo principal: `#F2C94C`
+- Marrón principal: `#6B4F2D`
+- Marrón oscuro (botones): `#5A3E22`
+- Blanco roto (fondos): `#FAFAF7`
+- Beige claro (fondos alternos): `#EFE6D8`
+- Gris oscuro (texto principal): `#333333`
+- Gris medio (texto secundario): `#666666`
+
+---
+
+## 4. Tipografía de la página
+
+La tipografía elegida para la página es:
+
+```css
+font-family: Arial, Helvetica, sans-serif;
+```
+## Tipografía
+
+Se ha optado por una tipografía sans serif por las siguientes razones:
+
+- Es clara y fácil de leer en pantallas pequeñas y grandes.
+- Está disponible en todos los sistemas operativos (web-safe).
+- Transmite una imagen moderna y accesible.
+- No distrae del contenido principal.
+
+### Jerarquía tipográfica
+
+- **Títulos principales (H1):** tamaño grande y en negrita.
+- **Subtítulos (H2, H3):** tamaños intermedios y peso seminegrita.
+- **Texto general:** tamaño mínimo de 16px.
+- **Textos secundarios:** ligeramente más pequeños y en gris medio.
+
+Esta jerarquía facilita la lectura y ayuda al usuario a identificar rápidamente la información más importante.
+
+---
+
+## Estilo de las imágenes
+
+Las imágenes utilizadas en la página deben ser **fotografías reales de los animales**, evitando ilustraciones o imágenes excesivamente editadas. El objetivo es mostrar a las mascotas de forma cercana y auténtica, generando empatía y confianza.
+
+### Características del estilo de imagen
+
+- Fotografías reales y actuales.
+- Iluminación natural siempre que sea posible.
+- Animales en entornos reales (refugio, hogar, exteriores).
+- Expresiones naturales que transmitan cercanía.
+- Evitar filtros fuertes o efectos artificiales.
+
+Este enfoque ayuda a que las personas conecten emocionalmente con las mascotas y refuerza la transparencia de la ONG.
+
+---
+
+## Uso del logo
+
+El logo de la ONG se integrará en la cabecera de la página y se utilizará como referencia cromática para todo el diseño. No se alterarán sus colores ni proporciones.
+
+El resto de la paleta y elementos visuales se han diseñado para acompañar al logo sin competir con él, permitiendo que sea el principal identificador visual de la organización.
+
+---
+
+## Coherencia y accesibilidad
+
+Todas las decisiones de diseño se han tomado teniendo en cuenta:
+
+- Contraste suficiente entre texto y fondo.
+- Tamaño de texto legible.
+- Colores que no dificulten la lectura.
+- Diseño adaptable a móviles, tabletas y escritorio.
+
+El objetivo final es que la web sea clara, usable y accesible para todo tipo de usuarios.
