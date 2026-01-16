@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="En esta página encontrarás el formulario de contacto de amigos peludos"/>
+    <meta name="keywords" content="animales, refugio, adopción"/>
+    
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="../../CSS/style.css" />
+
+  <title>Contacto</title>
+  </head>
+  <body>
+    
+<nav class="navbar">
+  
+  <div class="navbar-container">
+    <!-- Logo -->
+     <div>
+          <a href="../HTML/index.html" class="logo">
+          <img src="../IMAGENES/PNG/logo_amarillo.png" alt="Logo" height="55">
+          </a>
+     </div>
+
+
+    <!-- Enlaces -->
+     <div>
+       <ul class="nav-links" id="nav-links">
+      <li><a href="../HTML/index.html">Inicio</a></li>
+      <li><a href="../HTML/gatitos.html">Gatos</a></li>
+      <li><a href="../HTML/formulario.html" class="active">Contacto</a></li>
+    </ul>
+    </div>
+   
+  </div>
+</nav>
+
+
+    <!--FORMULARIO DE ADOPCIÓN DEL GATITO ELEGIDO-->
+
+    <div class="container my-5">
+      <h1 class="text-center mb-4">Formulario de adopción</h1>
+
+      <form action="https://jkorpela.fi/cgi-bin/echo.cgi" method="post" target="_blank" class="p-4 border rounded shadow-sm bg-light">
+
+        <div class="mb-3">
+          <label for="nombre" class="form-label">Nombre</label>
+          <input type="text" id="nombre" name="nombre" maxlength="30" class="form-control">
+        </div>
+
+        <div class="mb-3">
+          <label for="apellido" class="form-label">Apellidos</label>
+          <input type="text" id="apellido" name="apellido" maxlength="30" class="form-control">
+        </div>
+
+        <div class="mb-3">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" id="email" name="email" required class="form-control">
+        </div>
+
+        <div class="mb-3">
+          <label for="telefono" class="form-label">Teléfono de contacto</label>
+          <input type="tel" id="telefono" name="telefono" required class="form-control">
+        </div>
+
+        <div class="mb-3">
+          <label for="tipo_via" class="form-label">Tipo de vía</label>
+          <select id="tipo_via" name="tipo_via" class="form-select">
+            <option value="calle">Calle</option>
+            <option value="avenida">Avenida</option>
+            <option value="plaza">Plaza</option>
+            <option value="camino">Camino</option>
+            <option value="carretera">Carretera</option>
+          </select>
+        </div>
+
+        <div class="mb-3">
+          <label for="direccion" class="form-label">Dirección</label>
+          <input type="text" id="direccion" name="direccion" maxlength="100" class="form-control">
+        </div>
+
+        <div class="mb-3">
+          <label for="gato" class="form-label">Nombre del gato elegido</label>
+          <select id="gato" name="gato" class="form-select">
+            <option value="gato1">Adolfo</option>
+            <option value="gato2">Bella</option>
+            <option value="gato3">Crispy</option>
+            <option value="gato4">Jacobo</option>
+            <option value="gato5">Julio</option>
+            <option value="gato6">Meissa</option>
+            <option value="gato7">Mikado</option>
+            <option value="gato8">Misky</option>
+            <option value="gato9">Otis</option>
+            <option value="gato10">Pedro</option>
+            <option value="gato11">Salvia</option>
+            <option value="gato12">Jade</option>
+            <option value="gato13">Nadia</option>
+            <option value="gato14">Picu</option>
+            <option value="gato15">Rufian</option>
+            <option value="gato16">Sersei</option>
+          </select>
+        </div>
+
+        <div class="mb-3">
+          <label for="fecha" class="form-label">Fecha de recogida del animal</label>
+          <input type="date" id="fecha" name="fecha" required class="form-control">
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label d-block">¿Tienes más mascotas?</label>
+          <div class="form-check form-check-inline">
+            <input type="radio" id="mascotas_si" name="mascotas" value="si" class="form-check-input">
+            <label for="mascotas_si" class="form-check-label">Sí</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input type="radio" id="mascotas_no" name="mascotas" value="no" checked class="form-check-input">
+            <label for="mascotas_no" class="form-check-label">No</label>
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label d-block">¿Qué tipo de mascota?</label>
+          <div class="form-check form-check-inline">
+            <input type="checkbox" id="otro_gato" name="tipo_mascota" value="otro_gato" class="form-check-input">
+            <label for="otro_gato" class="form-check-label">Gato</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input type="checkbox" id="perro" name="tipo_mascota" value="perro" class="form-check-input">
+            <label for="perro" class="form-check-label">Perro</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input type="checkbox" id="otro" name="tipo_mascota" value="otro" class="form-check-input">
+            <label for="otro" class="form-check-label">Otro</label>
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label for="text" class="form-label">Escribe tu mensaje</label>
+          <textarea id="text" name="text" maxlength="300" class="form-control" rows="4"></textarea>
+        </div>
+
+        <div class="mb-3 form-check">
+          <input type="checkbox" id="politic" name="politica_privacidad" value="politic" required class="form-check-input">
+          <label for="politic" class="form-check-label">
+            He leído y acepto <a href="">el aviso legal y la política de privacidad</a>
+          </label>
+        </div>
+
+        <button type="submit" class="btn btn-warning w-100">Enviar</button>
+
+      </form>
+    </div>
+
+    </div>
+
+    <footer class="footer">
+      <small>
+				<pre> &copy; 2026 Amigos Peludos </pre>
+				<pre>Manuel Jesús Contreras Pacheco  Laura Infantes Corrales   Borja De La Cruz Lucio    Mario Lopez Gastón </pre>
+			</small>
+    </footer>
+  </body>
+</html>
