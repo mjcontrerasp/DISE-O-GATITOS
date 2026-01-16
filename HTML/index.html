@@ -5,8 +5,14 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 		<meta name="description" content="En esta página encontrarás información sobre un refugio de animales"/>
 		<meta name="keywords" content="animales, refugio, adoptar"/>
+		
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" 
+			rel="stylesheet" 
+			integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" 
+			crossorigin="anonymous"
+		>
 		<link rel="stylesheet" href="/CSS/style.css"/>
-		<title>Proyecto</title>
+		<title>Proyecto ONG</title>
 	</head>
 	<body>
 
@@ -19,17 +25,17 @@
 					</li>
 
 					<li>
-						<a href="../HTML/index.html">
+						<a href="/HTML/index.html">
 							<span>Inicio</span>
 						</a>
 					</li>
 					<li>
-						<a href="../HTML/PAGINA2/pagina2.html">
+						<a href="../HTML/gatitos.html">
 							<span>Gatos</span>
 						</a>
 					</li>
 					<li>
-						<a href="../HTML/PAGINA3/pagina3.html">
+						<a href="../HTML/formulario.html">
 							<span>Contacto</span>
 						</a>
 					</li>
@@ -46,9 +52,42 @@
 				<p>Queremos crear una comunidad de amantes de los gatos que apoyen nuestra misión y trabajen juntos para mejorar la vida de estos animales. A través de nuestra página, esperamos educar al público sobre la importancia de la adopción y fomentar un entorno donde cada gatito tenga la oportunidad de encontrar su hogar para siempre.</p>
 			</div>
 		</div>
-		<!-- Video de una página externa -->
-		<h2>Video sobre el Cuidado de tus mascotas</h2>
-		<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/28FtTF9Z_7s?si=IloC-Mp9deHboZuL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+		<!-- Carrusel -->
+		<br><br>
+		<h2>Algunos de nuestros inquilinos</h2>
+
+		<div class="d-flex justify-content-center">
+			<div id="carouselExample" class="carousel slide w-50">
+				<div class="carousel-inner">
+							<div class="carousel-item active">
+								<img src="../IMAGENES/JPG/julio.jpg" class="d-block w-50 h-50 mx-auto" alt="...">
+							</div>
+							<div class="carousel-item">
+								<img src="../IMAGENES/JPG/meissa.jpg" class="d-block w-50 h-50 mx-auto" alt="...">
+							</div>
+							<div class="carousel-item">
+								<img src="../IMAGENES/JPG/misky.jpg" class="d-block w-50 h-50 mx-auto" alt="...">
+							</div>
+							<div class="carousel-item">
+								<img src="../IMAGENES/JPG/mikado.jpg" class="d-block w-50 h-50 mx-auto" alt="...">
+							</div>
+							<div class="carousel-item">
+								<img src="../IMAGENES/JPG/nadia.jpg" class="d-block w-50 h-50 mx-auto" alt="...">
+							</div>
+						</div>
+				<button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Anterior</span>
+				</button>
+				<button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Siguiente</span>
+				</button>
+			</div>
+		</div>
+
+		<br><br><br><br>
 		<!-- Información sobre cuidado y bienestar -->
 		<div class="cuidado">
 			<h2 class="centrartext">Cuidado y Bienestar de tu Gato</h2>
@@ -81,56 +120,61 @@
 			</ul>
 		</div>
 			
-
+	<br><br><br><br>
 	<!-- Tabla de información nutricional -->
 	<h2>Información Nutricional para Gatos</h2>
-	<table>
-		<tr>
-			<th>Comida</th>
-			<th>Proteínas</th>
-			<th>Grasas</th>
-			<th>Carbohidratos</th>
-		</tr>
-		<tr>
-			<td>Pollo</td>
+		
+	<table class="table table-hover">
+		<thead>
+			<tr>
+			<th scope="col">Comida</th>
+			<th scope="col">Proteínas</th>
+			<th scope="col">Grasas</th>
+			<th scope="col">Carbohidratos</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+			<th scope="row">Pollo</th>
 			<td>25%</td>
 			<td>5%</td>
 			<td>0%</td>
-		</tr>
-		<tr>
-			<td>Pescado</td>
+			</tr>
+			<tr>
+			<th scope="row">Pescado</th>
 			<td>22%</td>
 			<td>6%</td>
 			<td>0%</td>
-		</tr>
-		<tr>
-			<td>Carne de res</td>
+			</tr>
+			<tr>
+			<th scope="row">Carne de res</th>
 			<td>26%</td>
 			<td>10%</td>
 			<td>0%</td>
-		</tr>
-		<tr>
-			<td>Comida seca para gatos</td>
+			</tr>
+			<tr>
+			<th scope="row">Comida seca para gatos</th>
 			<td>30%</td>
 			<td>15%</td>
 			<td>20%</td>
-		</tr>
-		<tr>
-			<td>Comida húmeda para gatos</td>
+			</tr>
+			<tr>
+			<th scope="row">Comida húmeda para gatos</th>
 			<td>10%</td>
 			<td>5%</td>
 			<td>2%</td>
-		</tr>
+			</tr>
+		</tbody>
 	</table>
 
 		<footer class="footer">
-			<small>
-				© 2026 Amigos Peludos
-				<p>Manuel Jesús Contreras Pacheco</p>
-				<p>Laura Infantes Corrales</p>
-				<p>Borja De La Cruz Lucio</p>
-				<p>Mario Lopez Gastón</p>
-			</small>
+			<p>
+				&copy;2026 Amigos Peludos
+				<pre>Manuel Jesús Contreras Pacheco		 Laura Infantes Corrales	 Borja De La Cruz Lucio		 Mario Lopez Gastón</pre>
+				
+			</p>
 		</footer>
+
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 	</body>
 </html>
