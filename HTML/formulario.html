@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="En esta página encontrarás el formulario de contacto para adoptar animales."/>
+    <meta name="keywords" content="animales, refugio, adoptar" />
+
+    <link rel="stylesheet" href="../../CSS/style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <title>Contacto</title>
+  </head>
+  <body>
+    <!--MENU DE NAVEGACIÓN-->
+    <nav>
+      <menu>
+        <ul class="menu">
+          <li class="logo">
+            <a href="../../HTML/index.html" class="logo"
+              ><img src="../../IMAGENES/PNG/logo gatos letras peque.png" alt=""
+            /></a>
+          </li>
+          <li>
+            <a href="../index.html">
+              <span>Inicio</span>
+            </a>
+          </li>
+          <li>
+            <a href="../PAGINA2/pagina2.html">
+              <span>Gatos</span>
+            </a>
+          </li>
+          <li>
+            <a href="../PAGINA3/pagina3.html">
+              <span>Contacto</span>
+            </a>
+          </li>
+        </ul>
+      </menu>
+    </nav>
+
+    <!--FORMULARIO DE ADOPCIÓN DEL GATITO ELEGIDO-->
+
+<div class="container my-5">
+  <h1 class="mb-4 text-center">Formulario de adopción</h1>
+
+  <form action="https://jkorpela.fi/cgi-bin/echo.cgi" method="post" target="_blank">
+    
+    <!-- Nombre y Apellidos -->
+    <div class="mb-3">
+      <label for="nombre" class="form-label">Nombre:</label>
+      <input type="text" class="form-control" id="nombre" name="nombre" maxlength="30">
+    </div>
+
+    <div class="mb-3">
+      <label for="apellido" class="form-label">Apellidos:</label>
+      <input type="text" class="form-control" id="apellido" name="apellido" maxlength="30">
+    </div>
+
+    <!-- Email y Teléfono -->
+    <div class="mb-3">
+      <label for="email" class="form-label">Email:</label>
+      <input type="email" class="form-control" id="email" name="email" required>
+    </div>
+
+    <div class="mb-3">
+      <label for="telefono" class="form-label">Teléfono de contacto:</label>
+      <input type="tel" class="form-control" id="telefono" name="telefono" required>
+    </div>
+
+    <!-- Dirección -->
+    <div class="mb-3 row">
+      <div class="col-md-3">
+        <label for="tipo_via" class="form-label">Tipo de vía:</label>
+        <select class="form-select" id="tipo_via" name="tipo_via">
+          <option value="calle">Calle</option>
+          <option value="avenida">Avenida</option>
+          <option value="plaza">Plaza</option>
+          <option value="camino">Camino</option>
+          <option value="carretera">Carretera</option>
+        </select>
+      </div>
+      <div class="col-md-9">
+        <label for="direccion" class="form-label">Dirección:</label>
+        <input type="text" class="form-control" id="direccion" name="direccion" maxlength="100">
+      </div>
+    </div>
+
+    <!-- Gato elegido -->
+    <div class="mb-3">
+      <label for="gato" class="form-label">Nombre del gatos elegido:</label>
+      <select class="form-select" id="gato" name="gato">
+        <option value="gato1">Adolfo</option>
+        <option value="gato2">Bella</option>
+        <option value="gato3">Crispy</option>
+        <option value="gato4">Jacobo</option>
+        <option value="gato5">Julio</option>
+        <option value="gato6">Meissa</option>
+        <option value="gato7">Mikado</option>
+        <option value="gato8">Misky</option>
+        <option value="gato9">Otis</option>
+        <option value="gato10">Pedro</option>
+        <option value="gato11">Salvia</option>
+        <option value="gato12">Jade</option>
+        <option value="gato13">Nadia</option>
+        <option value="gato14">Picu</option>
+        <option value="gato15">Rufian</option>
+        <option value="gato16">Sersei</option>
+      </select>
+    </div>
+
+    <!-- Fecha -->
+    <div class="mb-3">
+      <label for="fecha" class="form-label">Fecha de recogida del animal:</label>
+      <input type="date" class="form-control" id="fecha" name="fecha" required>
+    </div>
+
+    <!-- Más mascotas -->
+    <div class="mb-3">
+      <label class="form-label d-block">¿Tienes más mascotas?</label>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" id="mascotas_si" name="mascotas" value="si">
+        <label class="form-check-label" for="mascotas_si">Sí</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" id="mascotas_no" name="mascotas" value="no" checked>
+        <label class="form-check-label" for="mascotas_no">No</label>
+      </div>
+    </div>
+
+    <!-- Tipo de mascota -->
+    <div class="mb-3">
+      <label class="form-label d-block">¿Qué tipo de mascota?</label>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" id="otro_gato" name="tipo_mascota" value="otro_gato">
+        <label class="form-check-label" for="otro_gato">Gato</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" id="perro" name="tipo_mascota" value="perro">
+        <label class="form-check-label" for="perro">Perro</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" id="otro" name="tipo_mascota" value="otro">
+        <label class="form-check-label" for="otro">Otro</label>
+      </div>
+    </div>
+
+    <!-- Mensaje -->
+    <div class="mb-3">
+      <label for="text" class="form-label">Escribe tu mensaje:</label>
+      <textarea class="form-control" id="text" name="text" maxlength="300" rows="3"></textarea>
+    </div>
+
+    <!-- Política de privacidad -->
+    <div class="mb-3 form-check">
+      <input type="checkbox" class="form-check-input" id="politic" name="politica_privacidad" value="politic" required>
+      <label class="form-check-label" for="politic">
+        He leído y acepto <a href="">el aviso legal y la política de privacidad</a>
+      </label>
+    </div>
+
+    <!-- Botón enviar -->
+    <div class="mb-3 text-center">
+      <button type="submit" class="btn btn-primary">Enviar</button>
+    </div>
+
+  </form>
+</div>
+
+
+    <footer class="footer">
+      
+    </footer>
+  </body>
+</html>
