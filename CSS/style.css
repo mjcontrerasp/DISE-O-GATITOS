@@ -209,77 +209,15 @@ menu ul {
 }
 
 
-/*************************************************************/
-/* TABLAS DE LA PAGINA 4*/
-/*************************************************************/
 
-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin: 20px 0;
-  font-size: 1rem;
-  text-align: left;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-th,
-td {
-  padding: 12px 15px;
-  border: 1px solid #ffffff;
-}
-
-th {
-  background-color: #1f1f1f;
-  color: #ffffff;
-}
-
-tr:nth-child(even) {
-  background-color: #1f1f1f;
-}
-
-tr:hover {
-  background-color: #6f6f6f;
-}
-
-caption {
-  caption-side: top;
-  font-size: 1.2rem;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-.cuidado {
-  text-align: left;
-}
-.centrartext {
-  text-align: center;
-}
 
 /*************************************************************/
-/* BUSCADOR DE LA PAGINA 4*/
+/*YA ACTUALIZADO*/
 /*************************************************************/
-#buscador {
-  margin: 20px 0;
-  display: flex;
-  justify-content: right;
-  align-items: center;
-}
-#buscador .buscador {
-  padding: 3px;
-  border: 1px solid #000000;
-  border-radius: 5px;
-  font-size: small;
-}
 
-form input[type="submit"].botoncito {
-  padding: 5px 10px; /* Tamaño pequeño */
-  border: none;
-  border-radius: 5px;
-  background-color: #4caf50;
-  color: white;
-  cursor: pointer;
-  font-size: 0.8rem; /* Fuente más pequeña */
-}
 
-form input[type="submit"].botoncito:hover {
-  background-color: #45a049;
+
+.list-group-item, .table {
+    background-color: transparent;
+    color: #fcfcfc;
 }
